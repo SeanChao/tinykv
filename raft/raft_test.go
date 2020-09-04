@@ -634,7 +634,7 @@ func TestRecvMessageType_MsgRequestVote2AA(t *testing.T) {
 		// raft.Term is greater than or equal to raft.RaftLog.lastTerm. In this
 		// test we're only testing MessageType_MsgRequestVote responses when the campaigning node
 		// has a different raft log compared to the recipient node.
-		// Additionally we're verifying behaviour when the recipient node has
+		// Additionally we're verifying behavior when the recipient node has
 		// already given out its vote for its current term. We're not testing
 		// what the recipient node does when receiving a message with a
 		// different term number, so we simply initialize both term numbers to
